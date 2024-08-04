@@ -19,6 +19,8 @@
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
 \documentclass[11pt, a4paper]{awesome-cv}
+\usepackage{multicol}
+\usepackage{graphicx}
 
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
@@ -26,7 +28,7 @@
 % Color for highlights
 % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
 %                 awesome-nephritis, awesome-concrete, awesome-darknight
-\colorlet{awesome}{awesome-red}
+\colorlet{awesome}{awesome-darknight}
 % Uncomment if you would like to specify your own color
 % \definecolor{awesome}{HTML}{3E6D9C}
 
@@ -51,16 +53,16 @@
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
 % \photo[rectangle,edge,right]{./examples/profile}
-\name{Byungjin}{Park}
-\position{Site Reliability Engineer{\enskip\cdotp\enskip}Software Architect}
-\address{235, World Cup buk-ro, Mapo-gu, Seoul, 03936, Republic of Korea}
+\name{Hyeonsoo}{Lee}
+% \position{Software Architect{\enskip\cdotp\enskip}Security Expert}
+\position{Research Scientist}
+% \address{42-8, Bangbae-ro 15-gil, Seocho-gu, Seoul, 00681, Rep. of KOREA}
 
-\mobile{(+82) 10-9030-1843}
-\email{posquit0.bj@gmail.com}
-%\dateofbirth{January 1st, 1970}
-\homepage{www.posquit0.com}
-\github{posquit0}
-\linkedin{posquit0}
+\mobile{(+82) 10-7279-1661}
+\email{soomiles.dev@gmail.com}
+% \homepage{www.posquit0.com}
+\github{sooperset}
+\linkedin{soomiles21}
 % \gitlab{gitlab-id}
 % \stackoverflow{SO-id}{SO-name}
 % \twitter{@twit}
@@ -74,36 +76,47 @@
 % \googlescholar{googlescholar-id}{}
 % \extrainfo{extra information}
 
-\quote{``Be the change that you want to see in the world."}
+\quote{``Where others see impossibility, I see opportunity for innovation."}
 
+
+%-------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%-------------------------------------------------------------------------------
+\addbibresource{resume/references.bib}
 
 %-------------------------------------------------------------------------------
 \begin{document}
 
-% Print the header with above personal information
+% Print the header with above personal informations
 % Give optional argument to change alignment(C: center, L: left, R: right)
 \makecvheader[C]
 
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
 \makecvfooter
-  {\today}
-  {Byungjin Park~~~·~~~Résumé}
-  {\thepage}
+{\today}
+{Hyeonsoo Lee~~~·~~~Résumé}
+{\thepage}
 
 
 %-------------------------------------------------------------------------------
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
+
+% In the document body, where you want your publications to appear:
 \input{resume/summary.tex}
 \input{resume/experience.tex}
+\input{resume/research_interests.tex}
+\input{resume/publications.tex}
+\input{resume/patent.tex}
 \input{resume/honors.tex}
-\input{resume/certificates.tex}
+\input{resume/education.tex}
+\input{resume/skills.tex}
+% \input{resume/project.tex}
 % \input{resume/presentation.tex}
 % \input{resume/writing.tex}
 % \input{resume/committees.tex}
-\input{resume/education.tex}
 % \input{resume/extracurricular.tex}
 
 
