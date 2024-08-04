@@ -19,6 +19,8 @@
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
 \documentclass[11pt, a4paper]{awesome-cv}
+\usepackage{multicol}
+\usepackage{graphicx}
 
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
@@ -92,9 +94,9 @@
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
 \makecvfooter
-  {\today}
-  {Hyeonsoo Lee~~~·~~~Résumé}
-  {\thepage}
+{\today}
+{Hyeonsoo Lee~~~·~~~Résumé}
+{\thepage}
 
 
 %-------------------------------------------------------------------------------
@@ -105,10 +107,12 @@
 % In the document body, where you want your publications to appear:
 \input{resume/summary.tex}
 \input{resume/experience.tex}
-\input{resume/education.tex}
+\input{resume/research_interests.tex}
 \input{resume/publications.tex}
 \input{resume/patent.tex}
 \input{resume/honors.tex}
+\input{resume/education.tex}
+\input{resume/skills.tex}
 % \input{resume/project.tex}
 % \input{resume/presentation.tex}
 % \input{resume/writing.tex}

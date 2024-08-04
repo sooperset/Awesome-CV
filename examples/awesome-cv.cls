@@ -1,1 +1,1 @@
-../awesome-cv.cls
+C:/Users/Soo/OneDrive - UNIST/문서/workspace/repo/Awesome-CV/awesome-cv.cls
